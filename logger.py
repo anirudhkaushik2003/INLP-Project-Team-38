@@ -1,4 +1,4 @@
-from pytorch_lightning.loggers import Logger
+from pytorch_lightning.loggers import LightningLoggerBase
 from pytorch_lightning.utilities import rank_zero_only
 from datetime import datetime
 import os
