@@ -1,0 +1,23 @@
+05/08/2024 03:20:57 PM [INFO] featurizing the gcdc corpus: all for task: sentence-ordering with model architecture: fact-aware
+05/08/2024 03:20:58 PM [DEBUG] <<LOADING>> GCDC dataset from directory: /home2/anirudhkaushik/nlp_project/processed_data/GCDC
+05/08/2024 03:20:58 PM [DEBUG] working on train dataset 
+05/08/2024 03:20:59 PM [DEBUG] <Done>
+05/08/2024 03:20:59 PM [DEBUG] working on dev dataset 
+05/08/2024 03:20:59 PM [DEBUG] <Done>
+05/08/2024 03:20:59 PM [DEBUG] ------------------------------------------------------------
+05/08/2024 03:20:59 PM [DEBUG] <<INTEGRATING>> factual information to GCDC dataset
+05/08/2024 03:20:59 PM [DEBUG] working on train dataset (count: 3200)
+05/08/2024 03:20:59 PM [DEBUG] 0 datapoints truncated (maximum seq length : 512)
+05/08/2024 03:20:59 PM [DEBUG] 0 / 3200 datapoints contains no facts
+05/08/2024 03:20:59 PM [DEBUG] working on dev dataset (count: 800)
+05/08/2024 03:20:59 PM [DEBUG] 0 datapoints truncated (maximum seq length : 512)
+05/08/2024 03:20:59 PM [DEBUG] 0 / 800 datapoints contains no facts
+05/08/2024 03:20:59 PM [DEBUG] ------------------------------------------------------------
+05/08/2024 03:21:00 PM [INFO] single sentence doc count: 1, total doc count: 3200, obtained permutation dataset count: 63980
+05/08/2024 03:21:00 PM [INFO] single sentence doc count: 0, total doc count: 800, obtained permutation dataset count: 16000
+05/08/2024 03:21:00 PM [INFO] post-processing the dataset
+05/08/2024 03:21:02 PM [INFO] data preprocessed: 63980, sentences preprocessed: 127960
+05/08/2024 03:21:02 PM [INFO] fact preprocessed: 3479440, max_fact_count_per_doc: 50
+05/08/2024 03:23:11 PM [INFO] featurizing the datasets..
+05/08/2024 03:23:42 PM [DEBUG] 63980 data instance processed. max sent_seq_length: 512
+05/08/2024 03:23:42 PM [DEBUG] max fact_seq_length: 50

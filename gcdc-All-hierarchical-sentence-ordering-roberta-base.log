@@ -1,0 +1,13 @@
+05/08/2024 03:26:40 PM [INFO] featurizing the gcdc corpus: all for task: sentence-ordering with model architecture: hierarchical
+05/08/2024 03:26:41 PM [DEBUG] <<LOADING>> GCDC dataset from directory: /home2/anirudhkaushik/nlp_project/processed_data/GCDC
+05/08/2024 03:26:41 PM [DEBUG] working on train dataset 
+05/08/2024 03:26:41 PM [DEBUG] <Done>
+05/08/2024 03:26:41 PM [DEBUG] working on dev dataset 
+05/08/2024 03:26:41 PM [DEBUG] <Done>
+05/08/2024 03:26:41 PM [DEBUG] ------------------------------------------------------------
+05/08/2024 03:26:42 PM [INFO] single sentence doc count: 1, total doc count: 3200, obtained permutation dataset count: 63980
+05/08/2024 03:26:43 PM [INFO] single sentence doc count: 0, total doc count: 800, obtained permutation dataset count: 16000
+05/08/2024 03:26:43 PM [INFO] post-processing the dataset
+05/08/2024 03:26:43 PM [INFO] data preprocessed: 63980, sentences preprocessed: 127960
+05/08/2024 03:27:02 PM [INFO] featurizing the datasets..
+05/08/2024 03:27:02 PM [DEBUG] 63980 data instance processed. max sent_seq_length: 512
