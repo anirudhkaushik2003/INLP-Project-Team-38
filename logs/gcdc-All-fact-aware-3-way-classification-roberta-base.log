@@ -1,81 +1,81 @@
-05/04/2023 06:33:59 AM [INFO] featurizing the gcdc corpus: all for task: 3-way-classification with model architecture: fact-aware
-05/04/2023 06:34:06 AM [DEBUG] <<LOADING>> GCDC dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/GCDC
-05/04/2023 06:34:06 AM [DEBUG] working on train dataset 
-05/04/2023 06:34:07 AM [DEBUG] <Done>
-05/04/2023 06:34:07 AM [DEBUG] working on dev dataset 
-05/04/2023 06:34:07 AM [DEBUG] <Done>
-05/04/2023 06:34:07 AM [DEBUG] ------------------------------------------------------------
-05/04/2023 06:34:07 AM [DEBUG] <<INTEGRATING>> factual information to GCDC dataset
-05/04/2023 06:34:07 AM [DEBUG] working on train dataset (count: 3200)
-05/04/2023 06:34:07 AM [DEBUG] 0 datapoints truncated (maximum seq length : 512)
-05/04/2023 06:34:07 AM [DEBUG] 0 / 3200 datapoints contains no facts
-05/04/2023 06:34:07 AM [DEBUG] working on dev dataset (count: 800)
-05/04/2023 06:34:07 AM [DEBUG] 0 datapoints truncated (maximum seq length : 512)
-05/04/2023 06:34:07 AM [DEBUG] 0 / 800 datapoints contains no facts
-05/04/2023 06:34:07 AM [DEBUG] ------------------------------------------------------------
-05/04/2023 06:34:07 AM [INFO] post-processing the dataset
-05/04/2023 06:34:07 AM [INFO] data preprocessed: 3200, sentences preprocessed: 3200
-05/04/2023 06:34:07 AM [INFO] fact preprocessed: 87013, max_fact_count_per_doc: 50
-05/04/2023 06:34:11 AM [INFO] featurizing the datasets..
-05/04/2023 06:34:12 AM [DEBUG] 3200 data instance processed. max sent_seq_length: 512
-05/04/2023 06:34:12 AM [DEBUG] max fact_seq_length: 50
-05/04/2023 06:34:28 AM [INFO] post-processing the dataset
-05/04/2023 06:34:28 AM [INFO] data preprocessed: 800, sentences preprocessed: 800
-05/04/2023 06:34:28 AM [INFO] fact preprocessed: 21875, max_fact_count_per_doc: 50
-05/04/2023 06:34:28 AM [INFO] featurizing the datasets..
-05/04/2023 06:34:29 AM [DEBUG] 800 data instance processed. max sent_seq_length: 512
-05/04/2023 06:34:29 AM [DEBUG] max fact_seq_length: 50
-05/04/2023 06:34:33 AM [DEBUG] ------------------------------------------------------------
-05/04/2023 06:34:33 AM [INFO] label distribution in train dataset (total count: 3200)
-05/04/2023 06:34:33 AM [INFO] {2: 1520, 0: 1047, 1: 633}
-05/04/2023 06:34:33 AM [INFO] label distribution in dev dataset (total count: 800)
-05/04/2023 06:34:33 AM [INFO] {2: 379, 0: 262, 1: 159}
-05/04/2023 06:34:33 AM [DEBUG] ------------------------------------------------------------
-05/04/2023 06:34:33 AM [INFO] 
+05/08/2024 07:27:13 PM [INFO] featurizing the gcdc corpus: all for task: 3-way-classification with model architecture: fact-aware
+05/08/2024 07:27:17 PM [DEBUG] <<LOADING>> GCDC dataset from directory: /home2/anirudhkaushik/INLP-Project-Team-40/processed_data/GCDC
+05/08/2024 07:27:17 PM [DEBUG] working on train dataset 
+05/08/2024 07:27:17 PM [DEBUG] <Done>
+05/08/2024 07:27:17 PM [DEBUG] working on dev dataset 
+05/08/2024 07:27:17 PM [DEBUG] <Done>
+05/08/2024 07:27:17 PM [DEBUG] ------------------------------------------------------------
+05/08/2024 07:27:17 PM [DEBUG] <<INTEGRATING>> factual information to GCDC dataset
+05/08/2024 07:27:17 PM [DEBUG] working on train dataset (count: 3200)
+05/08/2024 07:27:17 PM [DEBUG] 0 datapoints truncated (maximum seq length : 512)
+05/08/2024 07:27:17 PM [DEBUG] 0 / 3200 datapoints contains no facts
+05/08/2024 07:27:17 PM [DEBUG] working on dev dataset (count: 800)
+05/08/2024 07:27:17 PM [DEBUG] 0 datapoints truncated (maximum seq length : 512)
+05/08/2024 07:27:17 PM [DEBUG] 0 / 800 datapoints contains no facts
+05/08/2024 07:27:17 PM [DEBUG] ------------------------------------------------------------
+05/08/2024 07:27:17 PM [INFO] post-processing the dataset
+05/08/2024 07:27:18 PM [INFO] data preprocessed: 3200, sentences preprocessed: 3200
+05/08/2024 07:27:18 PM [INFO] fact preprocessed: 87013, max_fact_count_per_doc: 50
+05/08/2024 07:27:20 PM [INFO] featurizing the datasets..
+05/08/2024 07:27:21 PM [DEBUG] 3200 data instance processed. max sent_seq_length: 512
+05/08/2024 07:27:21 PM [DEBUG] max fact_seq_length: 50
+05/08/2024 07:27:37 PM [INFO] post-processing the dataset
+05/08/2024 07:27:37 PM [INFO] data preprocessed: 800, sentences preprocessed: 800
+05/08/2024 07:27:37 PM [INFO] fact preprocessed: 21875, max_fact_count_per_doc: 50
+05/08/2024 07:27:37 PM [INFO] featurizing the datasets..
+05/08/2024 07:27:38 PM [DEBUG] 800 data instance processed. max sent_seq_length: 512
+05/08/2024 07:27:38 PM [DEBUG] max fact_seq_length: 50
+05/08/2024 07:27:42 PM [DEBUG] ------------------------------------------------------------
+05/08/2024 07:27:42 PM [INFO] label distribution in train dataset (total count: 3200)
+05/08/2024 07:27:42 PM [INFO] {2: 1520, 0: 1047, 1: 633}
+05/08/2024 07:27:42 PM [INFO] label distribution in dev dataset (total count: 800)
+05/08/2024 07:27:42 PM [INFO] {2: 379, 0: 262, 1: 159}
+05/08/2024 07:27:42 PM [DEBUG] ------------------------------------------------------------
+05/08/2024 07:27:42 PM [INFO] 
 command line argument captured ..
-05/04/2023 06:34:33 AM [INFO] ------------------------------------------------------------
-05/04/2023 06:34:33 AM [INFO] processed_dataset_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data
-05/04/2023 06:34:33 AM [INFO] checkpoint_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints
-05/04/2023 06:34:33 AM [INFO] gpus - 1
-05/04/2023 06:34:33 AM [INFO] epochs - 2
-05/04/2023 06:34:33 AM [INFO] batch_size - 1
-05/04/2023 06:34:33 AM [INFO] learning_rate - 1e-06
-05/04/2023 06:34:33 AM [INFO] clip_grad_norm - 0.0
-05/04/2023 06:34:33 AM [INFO] weight_decay - 0.01
-05/04/2023 06:34:33 AM [INFO] dropout_rate - 0.1
-05/04/2023 06:34:33 AM [INFO] enable_scheduler - False
-05/04/2023 06:34:33 AM [INFO] warmup_steps - 0.01
-05/04/2023 06:34:33 AM [INFO] margin - 1.0
-05/04/2023 06:34:33 AM [INFO] corpus - gcdc
-05/04/2023 06:34:33 AM [INFO] sub_corpus - all
-05/04/2023 06:34:33 AM [INFO] max_seq_len - 512
-05/04/2023 06:34:33 AM [INFO] max_fact_count - 50
-05/04/2023 06:34:33 AM [INFO] max_fact_seq_len - 50
-05/04/2023 06:34:33 AM [INFO] permutation_count - 20
-05/04/2023 06:34:33 AM [INFO] with_replacement - 1
-05/04/2023 06:34:33 AM [INFO] train_dataset_count - 3200
-05/04/2023 06:34:33 AM [INFO] val_dataset_count - 800
-05/04/2023 06:34:33 AM [INFO] test_dataset_count - None
-05/04/2023 06:34:33 AM [INFO] inverse_pra - 0
-05/04/2023 06:34:33 AM [INFO] task - 3-way-classification
-05/04/2023 06:34:33 AM [INFO] enable_kldiv - False
-05/04/2023 06:34:33 AM [INFO] label_smoothing - 0.1
-05/04/2023 06:34:33 AM [INFO] inference - False
-05/04/2023 06:34:33 AM [INFO] online_mode - 0
-05/04/2023 06:34:33 AM [INFO] logger_exp_name - gcdc-All-fact-aware-3-way-classification-roberta-base
-05/04/2023 06:34:33 AM [INFO] arch - fact-aware
-05/04/2023 06:34:33 AM [INFO] disable_mtl - 0
-05/04/2023 06:34:33 AM [INFO] mtl_base_arch - vanilla
-05/04/2023 06:34:33 AM [INFO] model_name - roberta-base
-05/04/2023 06:34:33 AM [INFO] tf2_model_name - roberta-base
-05/04/2023 06:34:33 AM [INFO] use_pretrained_tf2 - 0
-05/04/2023 06:34:33 AM [INFO] sentence_pooling - none
-05/04/2023 06:34:33 AM [INFO] freeze_emb_layer - False
-05/04/2023 06:34:33 AM [INFO] exp_count - 0
-05/04/2023 06:34:33 AM [INFO] fp16 - 0
-05/04/2023 06:34:33 AM [INFO] ------------------------------------------------------------
-05/04/2023 06:34:33 AM [DEBUG] initiating training process...
-05/04/2023 06:34:41 AM [DEBUG] ModelWrapper(
+05/08/2024 07:27:42 PM [INFO] ------------------------------------------------------------
+05/08/2024 07:27:42 PM [INFO] processed_dataset_path - /home2/anirudhkaushik/INLP-Project-Team-40/processed_data
+05/08/2024 07:27:42 PM [INFO] checkpoint_path - /ssd_scratch/cvit/anirudhkaushik/inlp_project_models/
+05/08/2024 07:27:42 PM [INFO] gpus - 4
+05/08/2024 07:27:42 PM [INFO] epochs - 10
+05/08/2024 07:27:42 PM [INFO] batch_size - 1
+05/08/2024 07:27:42 PM [INFO] learning_rate - 1e-06
+05/08/2024 07:27:42 PM [INFO] clip_grad_norm - 0.0
+05/08/2024 07:27:42 PM [INFO] weight_decay - 0.01
+05/08/2024 07:27:42 PM [INFO] dropout_rate - 0.1
+05/08/2024 07:27:42 PM [INFO] enable_scheduler - False
+05/08/2024 07:27:42 PM [INFO] warmup_steps - 0.01
+05/08/2024 07:27:42 PM [INFO] margin - 1.0
+05/08/2024 07:27:42 PM [INFO] corpus - gcdc
+05/08/2024 07:27:42 PM [INFO] sub_corpus - all
+05/08/2024 07:27:42 PM [INFO] max_seq_len - 512
+05/08/2024 07:27:42 PM [INFO] max_fact_count - 50
+05/08/2024 07:27:42 PM [INFO] max_fact_seq_len - 50
+05/08/2024 07:27:42 PM [INFO] permutation_count - 20
+05/08/2024 07:27:42 PM [INFO] with_replacement - 1
+05/08/2024 07:27:42 PM [INFO] train_dataset_count - 3200
+05/08/2024 07:27:42 PM [INFO] val_dataset_count - 800
+05/08/2024 07:27:42 PM [INFO] test_dataset_count - None
+05/08/2024 07:27:42 PM [INFO] inverse_pra - 0
+05/08/2024 07:27:42 PM [INFO] task - 3-way-classification
+05/08/2024 07:27:42 PM [INFO] enable_kldiv - False
+05/08/2024 07:27:42 PM [INFO] label_smoothing - 0.1
+05/08/2024 07:27:42 PM [INFO] inference - False
+05/08/2024 07:27:42 PM [INFO] online_mode - 1
+05/08/2024 07:27:42 PM [INFO] logger_exp_name - gcdc-All-fact-aware-3-way-classification-roberta-base
+05/08/2024 07:27:42 PM [INFO] arch - fact-aware
+05/08/2024 07:27:42 PM [INFO] disable_mtl - 0
+05/08/2024 07:27:42 PM [INFO] mtl_base_arch - vanilla
+05/08/2024 07:27:42 PM [INFO] model_name - roberta-base
+05/08/2024 07:27:42 PM [INFO] tf2_model_name - roberta-base
+05/08/2024 07:27:42 PM [INFO] use_pretrained_tf2 - 0
+05/08/2024 07:27:42 PM [INFO] sentence_pooling - none
+05/08/2024 07:27:42 PM [INFO] freeze_emb_layer - False
+05/08/2024 07:27:42 PM [INFO] exp_count - 0
+05/08/2024 07:27:42 PM [INFO] fp16 - 0
+05/08/2024 07:27:42 PM [INFO] ------------------------------------------------------------
+05/08/2024 07:27:42 PM [DEBUG] initiating training process...
+05/08/2024 07:27:49 PM [DEBUG] ModelWrapper(
   (doc_encoder): FactAwareModel(
     (tf1): RobertaModel(
       (embeddings): RobertaEmbeddings(
@@ -669,148 +669,21 @@ command line argument captured ..
   (val_metric): Accuracy()
   (test_metric): Accuracy()
 )
-05/04/2023 06:34:41 AM [INFO] Model has 249293571 trainable parameters
-05/04/2023 06:34:45 AM [DEBUG] about to start training loop...
-05/04/2023 06:34:48 AM [INFO] epoch : 0 - average_val_loss : 1.101843, overall_val_acc : 0.500000
-05/04/2023 06:48:09 AM [INFO] epoch : 0 - average_val_loss : 0.999090, overall_val_acc : 0.590000
-05/04/2023 06:48:40 AM [INFO] epoch : 0 - average_train_loss : 1.014592, overall_train_acc : 0.512187
-05/04/2023 08:11:11 AM [INFO] featurizing the gcdc corpus: All for task: 3-way-classification with model architecture: fact-aware
-05/04/2023 08:11:18 AM [DEBUG] <<LOADING>> GCDC dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/GCDC
-05/04/2023 08:11:18 AM [DEBUG] working on test dataset 
-05/04/2023 08:11:18 AM [DEBUG] <Done>
-05/04/2023 08:11:18 AM [DEBUG] ------------------------------------------------------------
-05/04/2023 08:11:18 AM [DEBUG] <<INTEGRATING>> factual information to GCDC dataset
-05/04/2023 08:11:18 AM [DEBUG] working on test dataset (count: 800)
-05/04/2023 08:11:19 AM [DEBUG] 0 datapoints truncated (maximum seq length : 512)
-05/04/2023 08:11:19 AM [DEBUG] 0 / 800 datapoints contains no facts
-05/04/2023 08:11:19 AM [DEBUG] ------------------------------------------------------------
-05/04/2023 08:11:19 AM [INFO] post-processing the dataset
-05/04/2023 08:11:19 AM [INFO] data preprocessed: 800, sentences preprocessed: 800
-05/04/2023 08:11:19 AM [INFO] fact preprocessed: 22123, max_fact_count_per_doc: 50
-05/04/2023 08:11:20 AM [INFO] featurizing the datasets..
-05/04/2023 08:11:20 AM [DEBUG] 800 data instance processed. max sent_seq_length: 512
-05/04/2023 08:11:20 AM [DEBUG] max fact_seq_length: 50
-05/04/2023 08:11:23 AM [DEBUG] ------------------------------------------------------------
-05/04/2023 08:11:23 AM [INFO] label distribution in test dataset (total count: 800)
-05/04/2023 08:11:23 AM [INFO] {2: 384, 1: 171, 0: 245}
-05/04/2023 08:11:23 AM [DEBUG] ------------------------------------------------------------
-05/04/2023 08:11:24 AM [INFO] 
-command line argument captured ..
-05/04/2023 08:11:24 AM [INFO] ------------------------------------------------------------
-05/04/2023 08:11:24 AM [INFO] processed_dataset_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data
-05/04/2023 08:11:24 AM [INFO] checkpoint_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints/gcdc-All-fact-aware-3-way-classification-roberta-base/epoch=0.ckpt
-05/04/2023 08:11:24 AM [INFO] gpus - 1
-05/04/2023 08:11:24 AM [INFO] epochs - 10
-05/04/2023 08:11:24 AM [INFO] batch_size - 2
-05/04/2023 08:11:24 AM [INFO] learning_rate - 1e-06
-05/04/2023 08:11:24 AM [INFO] clip_grad_norm - 0.0
-05/04/2023 08:11:24 AM [INFO] weight_decay - 0.01
-05/04/2023 08:11:24 AM [INFO] dropout_rate - 0.1
-05/04/2023 08:11:24 AM [INFO] enable_scheduler - False
-05/04/2023 08:11:24 AM [INFO] warmup_steps - 0.01
-05/04/2023 08:11:24 AM [INFO] margin - 1.0
-05/04/2023 08:11:24 AM [INFO] corpus - gcdc
-05/04/2023 08:11:24 AM [INFO] sub_corpus - All
-05/04/2023 08:11:24 AM [INFO] max_seq_len - 512
-05/04/2023 08:11:24 AM [INFO] max_fact_count - 50
-05/04/2023 08:11:24 AM [INFO] max_fact_seq_len - 50
-05/04/2023 08:11:24 AM [INFO] permutation_count - 20
-05/04/2023 08:11:24 AM [INFO] with_replacement - 1
-05/04/2023 08:11:24 AM [INFO] train_dataset_count - None
-05/04/2023 08:11:24 AM [INFO] val_dataset_count - None
-05/04/2023 08:11:24 AM [INFO] test_dataset_count - 800
-05/04/2023 08:11:24 AM [INFO] inverse_pra - 0
-05/04/2023 08:11:24 AM [INFO] task - 3-way-classification
-05/04/2023 08:11:24 AM [INFO] enable_kldiv - False
-05/04/2023 08:11:24 AM [INFO] label_smoothing - 0.1
-05/04/2023 08:11:24 AM [INFO] inference - True
-05/04/2023 08:11:24 AM [INFO] online_mode - 0
-05/04/2023 08:11:24 AM [INFO] logger_exp_name - gcdc-All-fact-aware-3-way-classification-roberta-base
-05/04/2023 08:11:24 AM [INFO] arch - fact-aware
-05/04/2023 08:11:24 AM [INFO] disable_mtl - 0
-05/04/2023 08:11:24 AM [INFO] mtl_base_arch - vanilla
-05/04/2023 08:11:24 AM [INFO] model_name - roberta-base
-05/04/2023 08:11:24 AM [INFO] tf2_model_name - roberta-base
-05/04/2023 08:11:24 AM [INFO] use_pretrained_tf2 - 0
-05/04/2023 08:11:24 AM [INFO] sentence_pooling - none
-05/04/2023 08:11:24 AM [INFO] freeze_emb_layer - True
-05/04/2023 08:11:24 AM [INFO] exp_count - 0
-05/04/2023 08:11:24 AM [INFO] fp16 - 0
-05/04/2023 08:11:24 AM [INFO] ------------------------------------------------------------
-05/04/2023 08:11:24 AM [DEBUG] initiating inference process...
-05/04/2023 08:11:31 AM [INFO] frozed embedding layer
-05/04/2023 08:11:31 AM [DEBUG] loading the model from checkpoint : /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints/gcdc-All-fact-aware-3-way-classification-roberta-base/epoch=0.ckpt
-05/04/2023 08:11:40 AM [INFO] frozed embedding layer
-05/04/2023 08:11:41 AM [DEBUG] loaded model successfully !!!
-05/04/2023 08:11:42 AM [INFO] testing on dataset : gcdc ( sub_dataset All ) on task : 3-way-classification
-05/04/2023 08:14:55 AM [INFO] featurizing the gcdc corpus: All for task: 3-way-classification with model architecture: fact-aware
-05/04/2023 08:15:01 AM [DEBUG] <<LOADING>> GCDC dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/GCDC
-05/04/2023 08:15:01 AM [DEBUG] working on test dataset 
-05/04/2023 08:15:01 AM [DEBUG] <Done>
-05/04/2023 08:15:01 AM [DEBUG] ------------------------------------------------------------
-05/04/2023 08:15:01 AM [DEBUG] <<INTEGRATING>> factual information to GCDC dataset
-05/04/2023 08:15:01 AM [DEBUG] working on test dataset (count: 800)
-05/04/2023 08:15:01 AM [DEBUG] 0 datapoints truncated (maximum seq length : 512)
-05/04/2023 08:15:01 AM [DEBUG] 0 / 800 datapoints contains no facts
-05/04/2023 08:15:01 AM [DEBUG] ------------------------------------------------------------
-05/04/2023 08:15:01 AM [INFO] post-processing the dataset
-05/04/2023 08:15:01 AM [INFO] data preprocessed: 800, sentences preprocessed: 800
-05/04/2023 08:15:01 AM [INFO] fact preprocessed: 22123, max_fact_count_per_doc: 50
-05/04/2023 08:15:02 AM [INFO] featurizing the datasets..
-05/04/2023 08:15:03 AM [DEBUG] 800 data instance processed. max sent_seq_length: 512
-05/04/2023 08:15:03 AM [DEBUG] max fact_seq_length: 50
-05/04/2023 08:15:06 AM [DEBUG] ------------------------------------------------------------
-05/04/2023 08:15:06 AM [INFO] label distribution in test dataset (total count: 800)
-05/04/2023 08:15:06 AM [INFO] {2: 384, 1: 171, 0: 245}
-05/04/2023 08:15:06 AM [DEBUG] ------------------------------------------------------------
-05/04/2023 08:15:06 AM [INFO] 
-command line argument captured ..
-05/04/2023 08:15:06 AM [INFO] ------------------------------------------------------------
-05/04/2023 08:15:06 AM [INFO] processed_dataset_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data
-05/04/2023 08:15:06 AM [INFO] checkpoint_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints/gcdc-All-fact-aware-3-way-classification-roberta-base/epoch=0.ckpt
-05/04/2023 08:15:06 AM [INFO] gpus - 1
-05/04/2023 08:15:06 AM [INFO] epochs - 10
-05/04/2023 08:15:06 AM [INFO] batch_size - 2
-05/04/2023 08:15:06 AM [INFO] learning_rate - 1e-06
-05/04/2023 08:15:06 AM [INFO] clip_grad_norm - 0.0
-05/04/2023 08:15:06 AM [INFO] weight_decay - 0.01
-05/04/2023 08:15:06 AM [INFO] dropout_rate - 0.1
-05/04/2023 08:15:06 AM [INFO] enable_scheduler - False
-05/04/2023 08:15:06 AM [INFO] warmup_steps - 0.01
-05/04/2023 08:15:06 AM [INFO] margin - 1.0
-05/04/2023 08:15:06 AM [INFO] corpus - gcdc
-05/04/2023 08:15:06 AM [INFO] sub_corpus - All
-05/04/2023 08:15:06 AM [INFO] max_seq_len - 512
-05/04/2023 08:15:06 AM [INFO] max_fact_count - 50
-05/04/2023 08:15:06 AM [INFO] max_fact_seq_len - 50
-05/04/2023 08:15:06 AM [INFO] permutation_count - 20
-05/04/2023 08:15:06 AM [INFO] with_replacement - 1
-05/04/2023 08:15:06 AM [INFO] train_dataset_count - None
-05/04/2023 08:15:06 AM [INFO] val_dataset_count - None
-05/04/2023 08:15:06 AM [INFO] test_dataset_count - 800
-05/04/2023 08:15:06 AM [INFO] inverse_pra - 0
-05/04/2023 08:15:06 AM [INFO] task - 3-way-classification
-05/04/2023 08:15:06 AM [INFO] enable_kldiv - False
-05/04/2023 08:15:06 AM [INFO] label_smoothing - 0.1
-05/04/2023 08:15:06 AM [INFO] inference - True
-05/04/2023 08:15:06 AM [INFO] online_mode - 0
-05/04/2023 08:15:06 AM [INFO] logger_exp_name - gcdc-All-fact-aware-3-way-classification-roberta-base
-05/04/2023 08:15:06 AM [INFO] arch - fact-aware
-05/04/2023 08:15:06 AM [INFO] disable_mtl - 0
-05/04/2023 08:15:06 AM [INFO] mtl_base_arch - vanilla
-05/04/2023 08:15:06 AM [INFO] model_name - roberta-base
-05/04/2023 08:15:06 AM [INFO] tf2_model_name - roberta-base
-05/04/2023 08:15:06 AM [INFO] use_pretrained_tf2 - 0
-05/04/2023 08:15:06 AM [INFO] sentence_pooling - none
-05/04/2023 08:15:06 AM [INFO] freeze_emb_layer - True
-05/04/2023 08:15:06 AM [INFO] exp_count - 0
-05/04/2023 08:15:06 AM [INFO] fp16 - 0
-05/04/2023 08:15:06 AM [INFO] ------------------------------------------------------------
-05/04/2023 08:15:06 AM [DEBUG] initiating inference process...
-05/04/2023 08:15:14 AM [INFO] frozed embedding layer
-05/04/2023 08:15:14 AM [DEBUG] loading the model from checkpoint : /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints/gcdc-All-fact-aware-3-way-classification-roberta-base/epoch=0.ckpt
-05/04/2023 08:15:23 AM [INFO] frozed embedding layer
-05/04/2023 08:15:23 AM [DEBUG] loaded model successfully !!!
-05/04/2023 08:15:24 AM [INFO] testing on dataset : gcdc ( sub_dataset All ) on task : 3-way-classification
-05/04/2023 08:16:21 AM [INFO] epoch : 0 - average_test_loss : 1.008673, overall_test_acc : 0.572500
-05/04/2023 08:16:21 AM [DEBUG] testing done !!!
+05/08/2024 07:27:49 PM [INFO] Model has 249293571 trainable parameters
+05/08/2024 07:27:58 PM [DEBUG] about to start training loop...
+05/08/2024 07:28:18 PM [INFO] epoch : 0 - average_val_loss : 0.916106, overall_val_acc : 0.625000
+05/08/2024 07:34:17 PM [INFO] epoch : 0 - average_val_loss : 1.058789, overall_val_acc : 0.473750
+05/08/2024 07:34:22 PM [INFO] epoch : 0 - average_train_loss : 1.066459, overall_train_acc : 0.464063
+05/08/2024 07:40:23 PM [INFO] epoch : 1 - average_val_loss : 1.107936, overall_val_acc : 0.526250
+05/08/2024 07:40:29 PM [INFO] epoch : 1 - average_train_loss : 0.954018, overall_train_acc : 0.554688
+05/08/2024 07:46:24 PM [INFO] epoch : 2 - average_val_loss : 1.056653, overall_val_acc : 0.567500
+05/08/2024 07:46:30 PM [INFO] epoch : 2 - average_train_loss : 0.835960, overall_train_acc : 0.621250
+05/08/2024 07:52:23 PM [INFO] epoch : 3 - average_val_loss : 1.152768, overall_val_acc : 0.571250
+05/08/2024 07:52:29 PM [INFO] epoch : 3 - average_train_loss : 0.830406, overall_train_acc : 0.645000
+05/08/2024 07:58:27 PM [INFO] epoch : 4 - average_val_loss : 1.231067, overall_val_acc : 0.585000
+05/08/2024 07:58:33 PM [INFO] epoch : 4 - average_train_loss : 0.798798, overall_train_acc : 0.669062
+05/08/2024 08:04:34 PM [INFO] epoch : 5 - average_val_loss : 1.300313, overall_val_acc : 0.582500
+05/08/2024 08:04:34 PM [INFO] epoch : 5 - average_train_loss : 0.789046, overall_train_acc : 0.679375
+05/08/2024 08:10:30 PM [INFO] epoch : 6 - average_val_loss : 1.123028, overall_val_acc : 0.622500
+05/08/2024 08:10:36 PM [INFO] epoch : 6 - average_train_loss : 0.704886, overall_train_acc : 0.687813
+05/08/2024 08:11:53 PM [DEBUG] training done.

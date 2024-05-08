@@ -1,73 +1,73 @@
-05/04/2023 05:39:33 AM [INFO] featurizing the gcdc corpus: Clinton for task: 3-way-classification with model architecture: mtl
-05/04/2023 05:39:35 AM [DEBUG] <<LOADING>> GCDC dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/GCDC
-05/04/2023 05:39:35 AM [DEBUG] working on test dataset 
-05/04/2023 05:39:35 AM [DEBUG] <Done>
-05/04/2023 05:39:35 AM [DEBUG] ------------------------------------------------------------
-05/04/2023 05:39:35 AM [INFO] post-processing the dataset
-05/04/2023 05:39:35 AM [INFO] data preprocessed: 200, sentences preprocessed: 200
-05/04/2023 05:39:35 AM [INFO] featurizing the datasets..
-05/04/2023 05:39:35 AM [DEBUG] 200 data instance processed. max sent_seq_length: 512
-05/04/2023 05:39:35 AM [DEBUG] ------------------------------------------------------------
-05/04/2023 05:39:35 AM [INFO] label distribution in test dataset (total count: 200)
-05/04/2023 05:39:35 AM [INFO] {2: 111, 1: 38, 0: 51}
-05/04/2023 05:39:35 AM [DEBUG] ------------------------------------------------------------
-05/04/2023 05:39:35 AM [INFO] featurizing the textual entailment corpus for task: 3-way-classification with model architecture: mtl
-05/04/2023 05:39:39 AM [DEBUG] <<LOADING>> RTE dataset from directory: /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data/RTE
-05/04/2023 05:39:39 AM [DEBUG] working on train dataset 
-05/04/2023 05:39:39 AM [DEBUG] <Done>
-05/04/2023 05:39:39 AM [DEBUG] working on dev dataset 
-05/04/2023 05:39:39 AM [DEBUG] <Done>
-05/04/2023 05:39:39 AM [DEBUG] ------------------------------------------------------------
-05/04/2023 05:39:39 AM [DEBUG] ------------------------------------------------------------
-05/04/2023 05:39:39 AM [DEBUG] ------------------------------------------------------------
-05/04/2023 05:39:39 AM [INFO] 
+05/08/2024 09:41:06 PM [INFO] featurizing the gcdc corpus: Clinton for task: 3-way-classification with model architecture: mtl
+05/08/2024 09:41:09 PM [DEBUG] <<LOADING>> GCDC dataset from directory: /home2/anirudhkaushik/INLP-Project-Team-40/processed_data/GCDC
+05/08/2024 09:41:09 PM [DEBUG] working on test dataset 
+05/08/2024 09:41:09 PM [DEBUG] <Done>
+05/08/2024 09:41:09 PM [DEBUG] ------------------------------------------------------------
+05/08/2024 09:41:09 PM [INFO] post-processing the dataset
+05/08/2024 09:41:09 PM [INFO] data preprocessed: 200, sentences preprocessed: 200
+05/08/2024 09:41:09 PM [INFO] featurizing the datasets..
+05/08/2024 09:41:09 PM [DEBUG] 200 data instance processed. max sent_seq_length: 512
+05/08/2024 09:41:09 PM [DEBUG] ------------------------------------------------------------
+05/08/2024 09:41:09 PM [INFO] label distribution in test dataset (total count: 200)
+05/08/2024 09:41:09 PM [INFO] {2: 111, 1: 38, 0: 51}
+05/08/2024 09:41:09 PM [DEBUG] ------------------------------------------------------------
+05/08/2024 09:41:09 PM [INFO] featurizing the textual entailment corpus for task: 3-way-classification with model architecture: mtl
+05/08/2024 09:41:11 PM [DEBUG] <<LOADING>> RTE dataset from directory: /home2/anirudhkaushik/INLP-Project-Team-40/processed_data/RTE
+05/08/2024 09:41:11 PM [DEBUG] working on train dataset 
+05/08/2024 09:41:11 PM [DEBUG] <Done>
+05/08/2024 09:41:11 PM [DEBUG] working on dev dataset 
+05/08/2024 09:41:11 PM [DEBUG] <Done>
+05/08/2024 09:41:11 PM [DEBUG] ------------------------------------------------------------
+05/08/2024 09:41:11 PM [DEBUG] ------------------------------------------------------------
+05/08/2024 09:41:11 PM [DEBUG] ------------------------------------------------------------
+05/08/2024 09:41:11 PM [INFO] 
 command line argument captured ..
-05/04/2023 05:39:39 AM [INFO] ------------------------------------------------------------
-05/04/2023 05:39:39 AM [INFO] processed_dataset_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/processed_data
-05/04/2023 05:39:39 AM [INFO] checkpoint_path - /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints/gcdc-All-mtl-vanilla-3-way-classification-roberta-base/epoch=1.ckpt
-05/04/2023 05:39:39 AM [INFO] gpus - 1
-05/04/2023 05:39:39 AM [INFO] epochs - 10
-05/04/2023 05:39:39 AM [INFO] batch_size - 2
-05/04/2023 05:39:39 AM [INFO] learning_rate - 1e-06
-05/04/2023 05:39:39 AM [INFO] clip_grad_norm - 0.0
-05/04/2023 05:39:39 AM [INFO] weight_decay - 0.01
-05/04/2023 05:39:39 AM [INFO] dropout_rate - 0.1
-05/04/2023 05:39:39 AM [INFO] enable_scheduler - False
-05/04/2023 05:39:39 AM [INFO] warmup_steps - 0.01
-05/04/2023 05:39:39 AM [INFO] margin - 1.0
-05/04/2023 05:39:39 AM [INFO] corpus - gcdc
-05/04/2023 05:39:39 AM [INFO] sub_corpus - Clinton
-05/04/2023 05:39:39 AM [INFO] max_seq_len - 512
-05/04/2023 05:39:39 AM [INFO] max_fact_count - 50
-05/04/2023 05:39:39 AM [INFO] max_fact_seq_len - 50
-05/04/2023 05:39:39 AM [INFO] permutation_count - 20
-05/04/2023 05:39:39 AM [INFO] with_replacement - 1
-05/04/2023 05:39:39 AM [INFO] train_dataset_count - None
-05/04/2023 05:39:39 AM [INFO] val_dataset_count - None
-05/04/2023 05:39:39 AM [INFO] test_dataset_count - 200
-05/04/2023 05:39:39 AM [INFO] inverse_pra - 0
-05/04/2023 05:39:39 AM [INFO] task - 3-way-classification
-05/04/2023 05:39:39 AM [INFO] enable_kldiv - False
-05/04/2023 05:39:39 AM [INFO] label_smoothing - 0.1
-05/04/2023 05:39:39 AM [INFO] inference - True
-05/04/2023 05:39:39 AM [INFO] online_mode - 0
-05/04/2023 05:39:39 AM [INFO] logger_exp_name - gcdc-Clinton-mtl-vanilla-3-way-classification-roberta-base
-05/04/2023 05:39:39 AM [INFO] arch - mtl
-05/04/2023 05:39:39 AM [INFO] disable_mtl - 0
-05/04/2023 05:39:39 AM [INFO] mtl_base_arch - vanilla
-05/04/2023 05:39:39 AM [INFO] model_name - roberta-base
-05/04/2023 05:39:39 AM [INFO] tf2_model_name - roberta-base
-05/04/2023 05:39:39 AM [INFO] use_pretrained_tf2 - 0
-05/04/2023 05:39:39 AM [INFO] sentence_pooling - none
-05/04/2023 05:39:39 AM [INFO] freeze_emb_layer - True
-05/04/2023 05:39:39 AM [INFO] exp_count - 0
-05/04/2023 05:39:39 AM [INFO] fp16 - 0
-05/04/2023 05:39:39 AM [INFO] ------------------------------------------------------------
-05/04/2023 05:39:39 AM [DEBUG] initiating inference process...
-05/04/2023 05:39:44 AM [INFO] frozed embedding layer
-05/04/2023 05:39:44 AM [DEBUG] loading the model from checkpoint : /home2/devesh.marwah/Transformer-Models-for-Text-Coherence-Assessment/lightning_checkpoints/gcdc-All-mtl-vanilla-3-way-classification-roberta-base/epoch=1.ckpt
-05/04/2023 05:39:49 AM [INFO] frozed embedding layer
-05/04/2023 05:39:49 AM [DEBUG] loaded model successfully !!!
-05/04/2023 05:39:49 AM [INFO] testing on dataset : gcdc ( sub_dataset Clinton ) on task : 3-way-classification
-05/04/2023 05:39:58 AM [INFO] epoch : 0 - average_test_loss : 0.835259, overall_test_acc : 0.645000
-05/04/2023 05:39:58 AM [DEBUG] testing done !!!
+05/08/2024 09:41:11 PM [INFO] ------------------------------------------------------------
+05/08/2024 09:41:11 PM [INFO] processed_dataset_path - /home2/anirudhkaushik/INLP-Project-Team-40/processed_data
+05/08/2024 09:41:11 PM [INFO] checkpoint_path - /ssd_scratch/cvit/anirudhkaushik/inlp_project_models/gcdc-All-mtl-vanilla-3-way-classification-roberta-base/epoch=3.ckpt
+05/08/2024 09:41:11 PM [INFO] gpus - 1
+05/08/2024 09:41:11 PM [INFO] epochs - 10
+05/08/2024 09:41:11 PM [INFO] batch_size - 2
+05/08/2024 09:41:11 PM [INFO] learning_rate - 1e-06
+05/08/2024 09:41:11 PM [INFO] clip_grad_norm - 0.0
+05/08/2024 09:41:11 PM [INFO] weight_decay - 0.01
+05/08/2024 09:41:11 PM [INFO] dropout_rate - 0.1
+05/08/2024 09:41:11 PM [INFO] enable_scheduler - False
+05/08/2024 09:41:11 PM [INFO] warmup_steps - 0.01
+05/08/2024 09:41:11 PM [INFO] margin - 1.0
+05/08/2024 09:41:11 PM [INFO] corpus - gcdc
+05/08/2024 09:41:11 PM [INFO] sub_corpus - Clinton
+05/08/2024 09:41:11 PM [INFO] max_seq_len - 512
+05/08/2024 09:41:11 PM [INFO] max_fact_count - 50
+05/08/2024 09:41:11 PM [INFO] max_fact_seq_len - 50
+05/08/2024 09:41:11 PM [INFO] permutation_count - 20
+05/08/2024 09:41:11 PM [INFO] with_replacement - 1
+05/08/2024 09:41:11 PM [INFO] train_dataset_count - None
+05/08/2024 09:41:11 PM [INFO] val_dataset_count - None
+05/08/2024 09:41:11 PM [INFO] test_dataset_count - 200
+05/08/2024 09:41:11 PM [INFO] inverse_pra - 0
+05/08/2024 09:41:11 PM [INFO] task - 3-way-classification
+05/08/2024 09:41:11 PM [INFO] enable_kldiv - False
+05/08/2024 09:41:11 PM [INFO] label_smoothing - 0.1
+05/08/2024 09:41:11 PM [INFO] inference - True
+05/08/2024 09:41:11 PM [INFO] online_mode - 1
+05/08/2024 09:41:11 PM [INFO] logger_exp_name - gcdc-Clinton-mtl-vanilla-3-way-classification-roberta-base
+05/08/2024 09:41:11 PM [INFO] arch - mtl
+05/08/2024 09:41:11 PM [INFO] disable_mtl - 0
+05/08/2024 09:41:11 PM [INFO] mtl_base_arch - vanilla
+05/08/2024 09:41:11 PM [INFO] model_name - roberta-base
+05/08/2024 09:41:11 PM [INFO] tf2_model_name - roberta-base
+05/08/2024 09:41:11 PM [INFO] use_pretrained_tf2 - 0
+05/08/2024 09:41:11 PM [INFO] sentence_pooling - none
+05/08/2024 09:41:11 PM [INFO] freeze_emb_layer - True
+05/08/2024 09:41:11 PM [INFO] exp_count - 0
+05/08/2024 09:41:11 PM [INFO] fp16 - 0
+05/08/2024 09:41:11 PM [INFO] ------------------------------------------------------------
+05/08/2024 09:41:11 PM [DEBUG] initiating inference process...
+05/08/2024 09:41:14 PM [INFO] frozed embedding layer
+05/08/2024 09:41:14 PM [DEBUG] loading the model from checkpoint : /ssd_scratch/cvit/anirudhkaushik/inlp_project_models/gcdc-All-mtl-vanilla-3-way-classification-roberta-base/epoch=3.ckpt
+05/08/2024 09:41:18 PM [INFO] frozed embedding layer
+05/08/2024 09:41:18 PM [DEBUG] loaded model successfully !!!
+05/08/2024 09:41:18 PM [INFO] testing on dataset : gcdc ( sub_dataset Clinton ) on task : 3-way-classification
+05/08/2024 09:41:29 PM [INFO] epoch : 0 - average_test_loss : 0.796183, overall_test_acc : 0.670000
+05/08/2024 09:41:29 PM [DEBUG] testing done !!!

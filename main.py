@@ -542,7 +542,7 @@ if __name__ == "__main__":
     parser.add_argument('--max_fact_seq_len', type=int, default=50,
                         help="specify length of the concatenated fact for each doc. \
                             if set to -1 then maximum length is obtained from fact string")
-    parser.add_argument('--permutation_count', type=int, default=20,
+    parser.add_argument('--permutation_count', type=int, default=2,
                         help="number of permutation allowed per data sample")
     parser.add_argument('--with_replacement', default=1, type=int,
                         help="if greater than 1, it will draw new samples with replacement")
