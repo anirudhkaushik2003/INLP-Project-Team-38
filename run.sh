@@ -7,7 +7,7 @@ dir_path=$(dirname "$file_path")
 #setting up the defaults
 START_INDEX=1
 OFFSET=10 # controls maximum number of runs
-GPUS=1
+GPUS=4
 CHECKPOINT_PATH=$dir_path/lightning_checkpoints/gcdc-All-vanilla-sentence-ordering-roberta-base/   #change required
 MODEL_DIR=$dir_path   #optional
 PYTHON=$(which python3)   #change required
@@ -38,7 +38,7 @@ WITH_REPLACEMENT=1   #if greater than zero it will draw sample with replacement 
 TASK='sentence-ordering'  # can take values from ['3-way-classification', 'minority-classification', 'sentence-ordering', 'sentence-score-prediction']
 
 MIXED_PRECISION=0
-ONLINE_SYNC=0  #control w&b online syncronization, 0 means inactive
+ONLINE_SYNC=1  #control w&b online syncronization, 0 means inactive
 
 MTL_BASE_ARCH='vanilla' # can take values from ['vanilla', 'fact-aware', 'hierarchical']
 DATASET_DIR=$MODEL_DIR

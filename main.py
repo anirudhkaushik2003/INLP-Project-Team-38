@@ -1,5 +1,4 @@
 import pytorch_lightning as pl
-import torchmetrics
 from argparse import ArgumentParser
 import os
 import numpy as np
@@ -11,7 +10,7 @@ import transformers
 from transformers.optimization import get_linear_schedule_with_warmup, get_constant_schedule_with_warmup
 import torch.nn.functional as F
 from pytorch_lightning.callbacks import ModelCheckpoint
-from torchmetrics import Metric
+from pytorch_lightning.metrics import Metric
 from sklearn.metrics import f1_score, accuracy_score, classification_report, precision_recall_fscore_support
 import json
 from logger import MyLogger, LOG_LEVELS
@@ -19,7 +18,7 @@ from models import *
 from pytorch_lightning.loggers import WandbLogger
 import sys
 from pytorch_lightning.utilities import rank_zero_only
-from dataset_processor.featurize_dataset import GCDCFeaturizer, WSJFeaturizer, MTLFeaturizer,DanishFeautrizer, CombinedFeaturizer
+from dataset_processor.featurize_dataset import GCDCFeaturizer, WSJFeaturizer, MTLFeaturizer, CombinedFeaturizer
 from scipy.stats import spearmanr
 from data_loader import get_dataset_loaders
 from utils.common import normalize_gcdc_sub_corpus
@@ -36,11 +35,7 @@ def get_allowed_operations():
         "gcdc": {
             "tasks" : ['3-way-classification', 'minority-classification', 'sentence-ordering', 'sentence-score-prediction'],
             "sub_corpus" : ['All', 'Clinton', 'Enron', 'Yelp', 'Yahoo'],
-        },
-    "danish":{
-             "tasks" : ["sentence-ordering","3-way-classification"],
-   
-    }
+        }
     }
     return dataset_options
 
@@ -107,22 +102,24 @@ class ModelWrapper(pl.LightningModule):
         if self.config_args.task == "sentence-ordering":
             self.task_head = PairWiseSentenceRanking(self.doc_encoder.tf2.config.hidden_size, args.dropout_rate)
             #metrics
-            self.train_metric = torchmetrics.Accuracy(task="multiclass", num_classes=2 )
-            self.val_metric = torchmetrics.Accuracy(task="multiclass", num_classes=2 )
-            self.test_metric = torchmetrics.Accuracy(task="multiclass", num_classes=2 )
+            self.train_metric = pl.metrics.Accuracy()
+            self.val_metric = pl.metrics.Accuracy()
+            self.test_metric = pl.metrics.Accuracy()
         elif self.config_args.task == "3-way-classification":
             self.task_head = TexClassificationHead(self.doc_encoder.tf2.config.hidden_size, 3, args.dropout_rate)
             #metrics
-            self.train_metric = torchmetrics.Accuracy(task="multiclass", num_classes=3 )
-            self.val_metric = torchmetrics.Accuracy(task="multiclass", num_classes=3 )
-            self.test_metric = torchmetrics.Accuracy(task="multiclass", num_classes=3 )
+            self.train_metric = pl.metrics.Accuracy()
+            self.val_metric = pl.metrics.Accuracy()
+            self.test_metric = pl.metrics.Accuracy()
         elif self.config_args.task == "minority-classification":
             self.task_head = TexClassificationHead(self.doc_encoder.tf2.config.hidden_size, 2, args.dropout_rate)
             # metric
             # calculates F0.5 score at the inference time and while training use accuracy metric
-            self.train_metric = torchmetrics.Accuracy(task="multiclass", num_classes=2 )
-            self.val_metric = torchmetrics.Accuracy(task="multiclass", num_classes=2 )
-            self.test_metric = torchmetrics.FBeta(num_classes=2, beta=0.5, average=None)
+            self.train_metric = pl.metrics.Accuracy()
+            self.val_metric = pl.metrics.Accuracy()
+            # self.test_metric = pl.metrics.FBeta(num_classes=2, beta=0.5, average=None)
+            self.test_metric = pl.metrics.Accuracy()
+
         elif self.config_args.task == "sentence-score-prediction":
             self.task_head = SentenceScorer(self.doc_encoder.tf2.config.hidden_size, args.dropout_rate)
         
@@ -131,8 +128,8 @@ class ModelWrapper(pl.LightningModule):
             # adding textual entailment task head
             self.te_task_head = TexClassificationHead(self.doc_encoder.tf2.config.hidden_size, 2, args.dropout_rate)
             # adding accuracy metrics as well 
-            self.te_train_metric = torchmetrics.Accuracy(task="multiclass", num_classes=2 )
-            self.te_val_metric = torchmetrics.Accuracy(task="multiclass", num_classes=2 )
+            self.te_train_metric = pl.metrics.Accuracy()
+            self.te_val_metric = pl.metrics.Accuracy()
 
     def _get_task_specific_dataset_index(self, dataset_ids):
         entailment_data_idx = []
@@ -531,7 +528,7 @@ if __name__ == "__main__":
     parser.add_argument("--margin", default=1.0, type=float,
                         help="margin to use in pairwise sentence ranking loss.")
     # dataset related configurations
-    parser.add_argument('--corpus', choices=['wsj', 'gcdc','danish'], type=str, default='gcdc',
+    parser.add_argument('--corpus', choices=['wsj', 'gcdc'], type=str, default='gcdc',
                         help="specify the corpus.")
     parser.add_argument('--sub_corpus', type=str, default='all',
                         help="specify the sub-corpus for the gcdc dataset.")
@@ -600,10 +597,7 @@ if __name__ == "__main__":
     parser.add_argument('--fp16', type=int, default=0,
                         help='enable the automatic mixed precision training')
     args  = parser.parse_args()
-    # python3 main.py --inference --arch combined --task sentence-ordering
-
-    # featurizer = WSJFeaturizer 
-    # featurizer(args).featurize_dataset(inference=args.inference)
+    
     full_arch_name = args.arch
     if args.arch=='mtl':
         full_arch_name="%s-%s"%(args.arch, args.mtl_base_arch)
@@ -630,15 +624,7 @@ if __name__ == "__main__":
     if rank_zero_only.rank == 0:
         # this will enforce to run preprocessing step during the process start on zeroth GPU and store it to common location.
         # It can be later loaded at each GPU in multi-gpu settings
-       # featurizer = GCDCFeaturizer if args.corpus == 'gcdc' else WSJFeaturizer
-        featurizer=None
-        if args.corpus == 'gcdc':
-            featurizer = GCDCFeaturizer 
-        elif args.corpus=="danish":
-            featurizer=DanishFeautrizer
-        else:
-            featurizer=WSJFeaturizer
-
+        featurizer = GCDCFeaturizer if args.corpus == 'gcdc' else WSJFeaturizer
         featurizer(args).featurize_dataset(inference=args.inference)
         # merge textual entailment dataset if architecture is MTL
         if args.arch=='mtl':
@@ -686,6 +672,6 @@ if __name__ == "__main__":
     args.logger.info('--'*30)
 
     if args.inference:
-       init_testing(args)
+        init_testing(args)
     else:
-       start_training(args)
+        start_training(args)

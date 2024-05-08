@@ -1,0 +1,3 @@
+05/08/2024 06:39:19 PM [INFO] featurizing the gcdc corpus: Yahoo for task: sentence-ordering with model architecture: vanilla
+05/08/2024 06:39:24 PM [DEBUG] <<LOADING>> GCDC dataset from directory: /home2/anirudhkaushik/INLP-Project-Team-40/processed_data-gcdc-Yahoo-vanilla-sentence-ordering-roberta-base-1/GCDC
+05/08/2024 06:39:24 PM [DEBUG] working on train dataset 

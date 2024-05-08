@@ -1,0 +1,64 @@
+05/08/2024 09:57:51 PM [INFO] featurizing the gcdc corpus: Yelp for task: minority-classification with model architecture: hierarchical
+05/08/2024 09:57:53 PM [DEBUG] <<LOADING>> GCDC dataset from directory: /home2/anirudhkaushik/INLP-Project-Team-40/processed_data/GCDC
+05/08/2024 09:57:53 PM [DEBUG] working on test dataset 
+05/08/2024 09:57:53 PM [DEBUG] <Done>
+05/08/2024 09:57:53 PM [DEBUG] ------------------------------------------------------------
+05/08/2024 09:57:53 PM [INFO] post-processing the dataset
+05/08/2024 09:57:53 PM [INFO] data preprocessed: 200, sentences preprocessed: 200
+05/08/2024 09:57:53 PM [INFO] featurizing the datasets..
+05/08/2024 09:57:53 PM [DEBUG] 200 data instance processed. max sent_seq_length: 512
+05/08/2024 09:57:53 PM [DEBUG] ------------------------------------------------------------
+05/08/2024 09:57:53 PM [INFO] label distribution in test dataset (total count: 200)
+05/08/2024 09:57:53 PM [INFO] {0: 181, 1: 19}
+05/08/2024 09:57:53 PM [DEBUG] ------------------------------------------------------------
+05/08/2024 09:57:53 PM [INFO] 
+command line argument captured ..
+05/08/2024 09:57:53 PM [INFO] ------------------------------------------------------------
+05/08/2024 09:57:53 PM [INFO] processed_dataset_path - /home2/anirudhkaushik/INLP-Project-Team-40/processed_data
+05/08/2024 09:57:53 PM [INFO] checkpoint_path - /ssd_scratch/cvit/anirudhkaushik/inlp_project_models/gcdc-All-hierarchical-minority-classification-roberta-base/epoch=0.ckpt
+05/08/2024 09:57:53 PM [INFO] gpus - 1
+05/08/2024 09:57:53 PM [INFO] epochs - 10
+05/08/2024 09:57:53 PM [INFO] batch_size - 2
+05/08/2024 09:57:53 PM [INFO] learning_rate - 1e-06
+05/08/2024 09:57:53 PM [INFO] clip_grad_norm - 0.0
+05/08/2024 09:57:53 PM [INFO] weight_decay - 0.01
+05/08/2024 09:57:53 PM [INFO] dropout_rate - 0.1
+05/08/2024 09:57:53 PM [INFO] enable_scheduler - False
+05/08/2024 09:57:53 PM [INFO] warmup_steps - 0.01
+05/08/2024 09:57:53 PM [INFO] margin - 1.0
+05/08/2024 09:57:53 PM [INFO] corpus - gcdc
+05/08/2024 09:57:53 PM [INFO] sub_corpus - Yelp
+05/08/2024 09:57:53 PM [INFO] max_seq_len - 512
+05/08/2024 09:57:53 PM [INFO] max_fact_count - 50
+05/08/2024 09:57:53 PM [INFO] max_fact_seq_len - 50
+05/08/2024 09:57:53 PM [INFO] permutation_count - 20
+05/08/2024 09:57:53 PM [INFO] with_replacement - 1
+05/08/2024 09:57:53 PM [INFO] train_dataset_count - None
+05/08/2024 09:57:53 PM [INFO] val_dataset_count - None
+05/08/2024 09:57:53 PM [INFO] test_dataset_count - 200
+05/08/2024 09:57:53 PM [INFO] inverse_pra - 0
+05/08/2024 09:57:53 PM [INFO] task - minority-classification
+05/08/2024 09:57:53 PM [INFO] enable_kldiv - False
+05/08/2024 09:57:53 PM [INFO] label_smoothing - 0.1
+05/08/2024 09:57:53 PM [INFO] inference - True
+05/08/2024 09:57:53 PM [INFO] online_mode - 1
+05/08/2024 09:57:53 PM [INFO] logger_exp_name - gcdc-Yelp-hierarchical-minority-classification-roberta-base
+05/08/2024 09:57:53 PM [INFO] arch - hierarchical
+05/08/2024 09:57:53 PM [INFO] disable_mtl - 0
+05/08/2024 09:57:53 PM [INFO] mtl_base_arch - vanilla
+05/08/2024 09:57:53 PM [INFO] model_name - roberta-base
+05/08/2024 09:57:53 PM [INFO] tf2_model_name - roberta-base
+05/08/2024 09:57:53 PM [INFO] use_pretrained_tf2 - 0
+05/08/2024 09:57:53 PM [INFO] sentence_pooling - none
+05/08/2024 09:57:53 PM [INFO] freeze_emb_layer - True
+05/08/2024 09:57:53 PM [INFO] exp_count - 0
+05/08/2024 09:57:53 PM [INFO] fp16 - 0
+05/08/2024 09:57:53 PM [INFO] ------------------------------------------------------------
+05/08/2024 09:57:53 PM [DEBUG] initiating inference process...
+05/08/2024 09:58:01 PM [INFO] frozed embedding layer
+05/08/2024 09:58:01 PM [DEBUG] loading the model from checkpoint : /ssd_scratch/cvit/anirudhkaushik/inlp_project_models/gcdc-All-hierarchical-minority-classification-roberta-base/epoch=0.ckpt
+05/08/2024 09:58:10 PM [INFO] frozed embedding layer
+05/08/2024 09:58:10 PM [DEBUG] loaded model successfully !!!
+05/08/2024 09:58:10 PM [INFO] testing on dataset : gcdc ( sub_dataset Yelp ) on task : minority-classification
+05/08/2024 09:58:22 PM [INFO] epoch : 0 - average_test_loss : 0.315164, overall_test_acc : 0.000000
+05/08/2024 09:58:22 PM [DEBUG] testing done !!!
